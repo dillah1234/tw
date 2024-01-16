@@ -8,6 +8,12 @@ module.exports = {
     fontSize: {
       agakbesar: "150px",
     },
+    
+    backgroundImage: {
+      'kucing': 'url("../public/kucing.jpeg")',
+      'aestetic': 'url("../public/aestetic.png")'
+    },
+  
   },
   plugins: [],
 }

@@ -544,30 +544,67 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.h-\[\] {
-  height: ;
+.h-14 {
+  height: 3.5rem;
 }
 
-.h-\[100pc\] {
-  height: 100pc;
-}
-
-.h-\[100px\] {
-  height: 100px;
-}
-
-.w-\[\] {
-  width: ;
+.h-\[1000px\] {
+  height: 1000px;
 }
 
 .w-\[500px\] {
   width: 500px;
 }
 
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.bg-aestetic {
+  background-image: url("../public/aestetic.png");
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-kucing {
+  background-image: url("../public/kucing.jpeg");
+}
+
+.from-green-300 {
+  --tw-gradient-from: #86efac var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(134 239 172 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-violet-500 {
+  --tw-gradient-from: #8b5cf6 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(139 92 246 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-blue-600 {
+  --tw-gradient-to: rgb(37 99 235 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #2563eb var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-fuchsia-500 {
+  --tw-gradient-to: #d946ef var(--tw-gradient-to-position);
+}
+
+.to-red-700 {
+  --tw-gradient-to: #b91c1c var(--tw-gradient-to-position);
+}
+
+.bg-left-bottom {
+  background-position: left bottom;
 }
 
 .indent-px {
@@ -591,6 +628,10 @@ video {
   line-height: 1;
 }
 
+.text-\[100px\] {
+  font-size: 100px;
+}
+
 .text-agakbesar {
   font-size: 150px;
 }
@@ -598,22 +639,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[104px\] {
-  font-size: 104px;
-}
-
-.text-\[1px\] {
-  font-size: 1px;
-}
-
-.text-\[150px\] {
-  font-size: 150px;
-}
-
-.text-\[500px\] {
-  font-size: 500px;
 }
 
 .font-thin {
@@ -632,12 +657,4 @@ video {
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[104\] {
-  color: 104;
 }
