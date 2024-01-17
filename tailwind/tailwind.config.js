@@ -11,9 +11,12 @@ module.exports = {
     
     backgroundImage: {
       'kucing': 'url("../public/kucing.jpeg")',
-      'aestetic': 'url("../public/aestetic.png")'
+      'aestetic': 'url("../public/aestetic.png")',
+      'view': 'url("../public/view.png")'
     },
-  
+  width: {
+    '500': '500px',
+  }
   },
   plugins: [],
 }

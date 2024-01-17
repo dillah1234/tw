@@ -544,6 +544,26 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
+}
+
+.mt-56 {
+  margin-top: 14rem;
+}
+
+.flex {
+  display: flex;
+}
+
 .h-14 {
   height: 3.5rem;
 }
@@ -552,8 +572,124 @@ video {
   height: 1000px;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[00px\] {
+  height: 00px;
+}
+
+.h-\[000px\] {
+  height: 000px;
+}
+
+.h-\[5000px\] {
+  height: 5000px;
+}
+
+.h-\[1px\] {
+  height: 1px;
+}
+
+.h-\[150px\] {
+  height: 150px;
+}
+
+.h-\[10px\] {
+  height: 10px;
+}
+
+.w-500 {
+  width: 500px;
+}
+
 .w-\[500px\] {
   width: 500px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[00px\] {
+  width: 00px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.min-w-24 {
+  min-width: 6rem;
+}
+
+.min-w-32 {
+  min-width: 8rem;
+}
+
+.min-w-40 {
+  min-width: 10rem;
+}
+
+.min-w-48 {
+  min-width: 12rem;
+}
+
+.min-w-64 {
+  min-width: 16rem;
+}
+
+.min-w-80 {
+  min-width: 20rem;
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
+.max-w-24 {
+  max-width: 6rem;
+}
+
+.max-w-32 {
+  max-width: 8rem;
+}
+
+.max-w-40 {
+  max-width: 10rem;
+}
+
+.max-w-48 {
+  max-width: 12rem;
+}
+
+.max-w-64 {
+  max-width: 16rem;
+}
+
+.max-w-80 {
+  max-width: 20rem;
+}
+
+.max-w-96 {
+  max-width: 24rem;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .overflow-y-scroll {
@@ -566,6 +702,16 @@ video {
   white-space: nowrap;
 }
 
+.bg-green-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
 .bg-aestetic {
   background-image: url("../public/aestetic.png");
 }
@@ -576,6 +722,10 @@ video {
 
 .bg-kucing {
   background-image: url("../public/kucing.jpeg");
+}
+
+.bg-view {
+  background-image: url("../public/view.png");
 }
 
 .from-green-300 {
@@ -603,8 +753,41 @@ video {
   --tw-gradient-to: #b91c1c var(--tw-gradient-to-position);
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .bg-left-bottom {
   background-position: left bottom;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-left-top {
+  background-position: left top;
+}
+
+.bg-left {
+  background-position: left;
+}
+
+.bg-right-top {
+  background-position: right top;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .indent-px {
@@ -639,6 +822,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
 }
 
 .font-thin {
