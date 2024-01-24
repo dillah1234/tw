@@ -15,6 +15,8 @@ module.exports = {
         aestetic: 'url("../public/aestetic.png")',
         view: 'url("../public/view.png")',
         estetik: 'url("../public/estetik.jpg")',
+        pp: 'url("../public/pp.jpg")',
+        ganzz: 'url("../public/ganzz.jpg")',
       },
       width: {
         500: "500px",
