@@ -17,6 +17,7 @@ module.exports = {
         estetik: 'url("../public/estetik.jpg")',
         pp: 'url("../public/pp.jpg")',
         ganzz: 'url("../public/ganzz.jpg")',
+        raw: 'url("../public/raw.webp")'
       },
       width: {
         500: "500px",
