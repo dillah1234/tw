@@ -18,7 +18,10 @@ module.exports = {
         estetik: 'url("../public/estetik.jpg")',
         pp: 'url("../public/pp.jpg")',
         ganzz: 'url("../public/ganzz.jpg")',
-        raw: 'url("../public/raw.webp")'
+        raw: 'url("../public/raw.webp")',
+        kuliner: 'url("../public/kuliner.jpg")',
+        kl: 'url("../public/kl.jpg")',
+        tongseng: 'url("../public/tongseng.jpg")'
       },
       width: {
         500: "500px",

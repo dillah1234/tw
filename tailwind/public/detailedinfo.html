@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark:bg-slate-900"></body>
+    <header class="bg-green-300 text-white py-2 dark:bg-slate-700">
+        <div class="container mx-auto justify-between items-center flex">
+            <h1 class="text-2xl font-Montserrat ml-3.5">Logo</h1>
+            <a href="page.html" class="text-white hover:underline ml-auto">Log in</a>
+            <a href="registrasi.html" class="text-white hover:underline ml-10">Daftar</a>
+        </div>
+    </header>
+
+    <div class="flex items-center justify-center gap-1 mt-5 mb-10">
+        <!-- svg matahari, ambil code nya di hero-icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-6 w-6 text-orange-500 dark:text-white"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+          />
+        </svg>
+        <button class="h-5 w-10 rounded-full bg-slate-500 p-0.5">
+          <div class="h-4 w-4 rounded-full bg-white dark:translate-x-5"></div>
+        </button>
+              <!-- svg bulan, ambil code nya di hero-icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="dark:text-blue-500 text-white h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+          />
+        </svg>
+      </div>
+      <script>
+        function toDT() {
+          if (localStorage.getItem("theme") === "dark") {
+            localStorage.setItem("theme", "light");
+            document.documentElement.classList.remove("dark");
+          } else {
+            localStorage.setItem("theme", "dark");
+            document.documentElement.classList.add("dark");
+          }
+        }
+        document.querySelector("button").addEventListener("click", toDT);
+        if (localStorage.getItem("theme") === "dark") {
+          document.documentElement.classList.add("dark");
+        }
+      </script>
+
+      <main>
+
+        <div class="container justify-between dark:bg-slate-700">
+            
+            <div class="text-7xl dark:text-black flex justify-center items-center h-full">
+                Kuliner
+            </div>
+        </div>
+
+        <div class="container ml-3.5 mb-10 mt-10 bg-emerald-500/20 dark:bg-slate-700">
+          <div class="rounded-lg border p-10">
+            <img src="kuliner.jpg" width="90px" class="float-left mr-3" alt="" />
+            <p>Rendang (Minangkabau: randang; Jawi: رندڠ) adalah hidangan berbahan dasar daging yang dihasilkan dari proses memasak suhu rendah dalam waktu lama dengan menggunakan aneka rempah-rempah dan santan. Proses memasaknya memakan waktu berjam-jam (biasanya sekitar empat jam) hingga yang tinggal hanyalah potongan daging berwarna hitam pekat dan dedak. Dalam suhu ruangan, rendang dapat bertahan hingga berminggu-minggu. Rendang yang dimasak dalam waktu yang lebih singkat dan santannya belum mengering disebut kalio, berwarna cokelat terang keemasan.</p>
+
+
+
+            
+          </div>
+        </div>
+        <div class="container ml-3.5 mb-10 mt-10 bg-yellow-200/20 dark:bg-slate-700">
+          <div class="rounded-lg border p-10">
+            <img src="kl.jpg" width="90px" class="float-right mr-3" alt="" />
+            <p>Dendeng adalah daging yang dipotong tipis menjadi serpihan yang lemaknya dipangkas, dibumbui dengan saus asam, asin atau manis dengan dikeringkan dengan api kecil atau diasinkan dan dijemur. Hasilnya adalah daging yang asin dan setengah manis dan tidak perlu disimpan di lemari es. Dendeng adalah contoh makanan yang diawetkan.</p>
+          </div>
+        </div>
+
+        <div class="md:flex">
+          <div class="bg-tongseng bg-cover mx-auto w-[300px] h-[300px] md:w-[600px] md:h-[300px] rounded-lg text-2xl lg:h-[500px] md:bg-center"></div>
+          
+          
+          <div class="">
+            <h1 class="text-center justify-center m-5 text-7xl font-bold">Tongseng</h1>
+              <p class="text-center justify-center font-bold text-4xl">Rp.50.000</p>
+              <div class="text-center justify-center flex"></div>
+              <div class="rating flex flex-row items-center ">
+                <span class=" mx-auto flex mt-3">
+                  <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Golden_star.svg/1200px-Golden_star.svg.png"
+                  alt="star"
+                  class="w-4 h-4 mr-1 "
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Golden_star.svg/1200px-Golden_star.svg.png"
+                  alt="star"
+                  class="w-4 h-4 mr-1"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Golden_star.svg/1200px-Golden_star.svg.png"
+                  alt="star"
+                  class="w-4 h-4 mr-1"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Golden_star.svg/1200px-Golden_star.svg.png"
+                  alt="star"
+                  class="w-4 h-4 mr-1"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Golden_star.svg/1200px-Golden_star.svg.png"
+                  alt="star"
+                  class="w-4 h-4 mr-1"
+                />
+                
+                </span>
+                </div>
+                <div class="font-Montserrat ml-10 mt-5">Deskripsi produk: Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vitae, minus molestiae voluptatibus adipisci alias nobis quod repudiandae eius neque, sapiente recusandae labore dicta tenetur! Sapiente sunt soluta ullam inventore!</div>
+  
+                <div class="flex justify-center items-start gap-2">
+                  <div
+                  class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-40 relative px-6 py-[11px] rounded-lg bg-white border border-green-500 mt-10 ml-10"
+                  >
+                  <p
+                  class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-green-500"
+                  >
+                  Beli Sekarang
+                  </p>
+                  </div>
+                  <div
+                  class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-40 relative px-6 py-[11px] rounded-lg bg-green-500 mt-10 ml-4"
+                  >
+                  <p
+                  class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-white"
+                  >
+                  + Keranjang
+                  </p>
+                </div>
+                </div>
+      
+
+
+              </div>
+          
+          
+  
+          
+            
+          
+
+        
+
+          
+
+          
+          
+      
+  
+
+        
+      </main>
+</body>
+</html>

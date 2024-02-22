@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,30 +8,29 @@
   </head>
   <body class="mt-10 bg-white dark:bg-black dark:text-white">
     <div class="flex justify-center">
-    <div class="mr-3 text-sm">Light</div>
-    <input type="checkbox" id="geser" class="hidden" />
-    <label for="geser">
-    <div
-    class="flex h-5 w-10 cursor-pointer items-center rounded-full bg-slate-500 p-1"
-    >
-    <div
-    class="-ml-[3px] h-4 w-4 rounded-full bg-white dark:translate-x-5"
-    ></div>
-    </div>
-    </label>
-    <span class="ml-3 text-sm">Dark</span>
+      <div class="mr-3 text-sm">Light</div>
+      <input type="checkbox" id="geser" class="hidden" />
+      <label for="geser">
+        <div
+          class="flex h-5 w-10 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+        >
+          <div
+            class="-ml-[3px] h-4 w-4 rounded-full bg-white dark:translate-x-5"
+          ></div>
+        </div>
+      </label>
+      <span class="ml-3 text-sm">Dark</span>
     </div>
     <h1 class=""
   </body>
-<script>
+  <script>
     const checkbox = document.querySelector("#geser");
     const html = document.querySelector("html");
 
     checkbox.addEventListener("click", function () {
-        checkbox.checked
-          ? html.classList.add("dark")
-          : html.classList.remove("dark");
+      checkbox.checked
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
     });
-    
-</script>
+  </script>
 </html>
