@@ -23,6 +23,7 @@ module.exports = {
         kl: 'url("../public/kl.jpg")',
         tongseng: 'url("../public/tongseng.jpg")'
       },
+      
       width: {
         500: "500px",
       },
