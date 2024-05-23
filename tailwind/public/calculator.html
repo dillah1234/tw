@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <section class="w-[300px] h-96 bg-slate-200 rounded-lg shadow-lg mx-auto px-5 m-10">
+         <h1 class="text-center font-Montserrat m-5">calculator sederhana</h1>
+         <div class="mb-4">
+            <label for="" class="block text-gray-600 font-Montserrat m-5 "
+              ></label
+            >
+            <input
+              id="input1"
+              type="username"
+              class="form-input bg-white border-black w-full shadow-xl"
+              required
+              placeholder="masukan angka pertama"
+            />
+            <div class="mb-4">
+                <label for="" class="block text-gray-600 font-Montserrat m-5"
+                  ></label
+                >
+                <input
+                  id="input2"
+                  type="username"
+                  class="form-input bg-white border-gray-300 w-full shadow-xl"
+                  required
+                  placeholder="masukan angka kedua"
+                /> 
+                <div class="flex flex-row  mx-auto mt-3 space-x-4">
+                    <button onclick="tambah()" class="basis-1/2 bg-emerald-300 rounded-lg">tambah</button>
+                    <button onclick="kurang()" class="basis-1/2 bg-emerald-300 rounded-lg">kurang</button>
+                    
+                </div>
+                <div class="flex flex-row  mx-auto mt-3 space-x-4">
+                <button onclick="kali()" class="basis-1/2 bg-emerald-300 rounded-lg">kali</button>
+                <button onclick="kurang()"   class="basis-1/2 bg-emerald-300 rounded-lg">bagi</button>
+                </div>
+                <div class="text-center font-Montserrat mt-5">:</div>
+    </section>
+
+    <script>
+        function tambah() {
+            var input1 = document.getElementById('input1').value
+            var convertinput1= +input1
+            var input2 = document.getElementById('input2').value
+            var convertinput2= +input2
+            var hasilTambah=convertinput1+convertinput2
+            // var hasilTambah = document.getElementById('hasilTambah')
+            console.log(hasilTambah);
+        }
+
+        function kurang() {
+            var input1 = document.getElementById('input1').value
+            var convertinput1= +input1
+            var input2 = document.getElementById('input2').value
+            var convertinput2= +input2
+            var hasilTambah=convertinput1-convertinput2
+            console.log(hasilTambah);
+            }
+
+        function kali
+        
+    </script>
+</body>
+</html>`
