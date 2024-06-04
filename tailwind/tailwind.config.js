@@ -22,6 +22,7 @@ module.exports = {
         kuliner: 'url("../public/kuliner.jpg")',
         kl: 'url("../public/kl.jpg")',
         tongseng: 'url("../public/tongseng.jpg")'
+        
       },
       
       width: {

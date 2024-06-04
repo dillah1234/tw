@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var motor = document.getElementById("harga").innerHTML;
+        document.getElementById("hasil").innerHTML = motor.toLocaleString("id-ID");
+    
+        function tambah() {
+          var angka = document.getElementById("angka").value;
+          angka++;
+          console.log(angka);
+          document.getElementById("angka").value = angka;
+          var hasil = angka * motor;
+          document.getElementById("hasil").innerHTML =
+            hasil.toLocaleString("id-ID");
+        }
+        function Kurang() {
+          var angka = document.getElementById("angka").value;
+          angka--;
+          console.log(angka);
+          document.getElementById("angka").value = angka;
+          var hasil = angka * motor;
+          document.getElementById("hasil").innerHTML =
+            hasil.toLocaleString("id-ID");
+        }
+        function Voucher() {
+          var inpuVoucher = document.getElementById("voucher").value;
+          if (inpuVoucher == "Discount 50%") {
+            document.getElementById("hasilvoucher").innerHTML = "Vocher Berhasil!";
+            document.getElementById("hasilvoucher").classList.add("text-green-500", "font-bold")
+          } else if (inpuVoucher == "Discount 30%") {
+            document.getElementById("hasilvoucher").innerHTML = "Vocher Berhasil!";
+            document.getElementById("hasilvoucher").classList.add("text-green-500", "font-bold")
+          } else {
+            document.getElementById("hasilvoucher").innerHTML = "Coba Lagi";
+            document.getElementById("hasilvoucher").classList.remove("text-green-500", "font-bold")
+            document.getElementById("hasilvoucher").classList.add("text-red-500", "font-bold")
+          }
+        }
+      </script>
+</body>
+</html>

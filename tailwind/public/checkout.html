@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+  </head>
+  <body class="bg-slate-300">
+    <div
+      class="bg-white w-[1300px] h-[200px] mt-6 mx-auto border-2 border-slate-700"
+    >
+      <div class="flex">
+        <form>
+          <input
+            type="checkbox"
+            name="barang"
+            id="pesanan"
+            class="w-6 h-6 mt-20 ml-7"
+          />
+        </form>
+
+        <img src="kucing.jpeg" class="w-40 h-40 mt-4 ml-10" />
+        <div class="ml-3">
+          <p class="font-medium text-slate-800 text-xl mt-4 ml-2">
+            kucing imuet<br />
+            plus jantan dan betina
+          </p>
+          <div
+            class="border-2 border-green-400 text-green-400 rounded-sm w-[150px] h-[25px] pl-1 ml-2 mt-1"
+          >
+            <p class="-mt-[3px]">Bebas Pengambilan</p>
+          </div>
+        </div>
+        <form action="">
+          <div class="mt-16 ml-16">
+            <label for="cats">Choose a cat:</label>
+            <select name="cat" id="coll">
+              <option value="anggora">anggora</option>
+              <option value="persia">persia</option>
+              <option value="kampung">kampung</option>
+              <option value="oyen">oyen</option>
+            </select>
+          </div>
+        </form>
+        <h1 id="Var" class="mt-16 ml-10 font-semibold">500000</h1>
+        <div class="border-2 h-7 mt-16 border-black ml-10 rounded-sm">
+          <button onclick="minus()" id="num1" class="ml-2">-</button>
+          <input
+            type="number"
+            name="jumlah"
+            id="barang"
+            value="1"
+            class="text-center ml-4 h-4 w-6 "
+          />
+          <button onclick="plus()" id="num2" class="mr-2">+</button>
+        </div>
+        <h1 class="mt-16 ml-10 font-semibold text-orange-400">
+          Rp <span id="totalSementara"></span>
+        </h1>
+        <h1 class="mt-16 ml-7 font-Montserrat">Produk serupa</h1>
+      </div>
+    </div>
+<!-- card 1 -->
+    <div
+      class="bg-white w-[1300px] h-[60px] mx-auto pt-5 pl-12 flex  shadow-md border border-slate-400"
+    >
+    <form>
+      <input
+        type="checkbox"
+        name="barang"
+        id="pesanan"
+        class="w-6 h-6 mr-6"
+      />
+    </form>
+      <img src="gakir.jpg" class="w-[80px] h-[20px]" />
+      <p class="ml-4 text-xs font-semibold mt-[2px]">
+        Gratis Ongkir s/d Rp 15.000 dengan min. belanja Rp0; Gratis Ongkir s/d
+        Rp40.000 dengan min. belanja Rp 150.000
+        <span class="text-blue-600">Pelajari lebih lanjut</span>
+      </p>
+    </div>
+<!-- card 2 -->
+    <div
+      class="bg-white w-[1300px] h-[60px] mx-auto  flex space-x-4 pt-3 pl-4"
+    >
+      <img src="gakir.jpg" class="w-[50px] h-[30px] ml-8" />
+      <p class="mt-1">voucher Discount :</p>
+      <input
+        type="text"
+        id="voucher"
+        class="w-64 h-8 border border-black rounded pl-2"
+        placeholder="Masukkan voucher"
+      />
+      <button
+        class="bg-blue-500 h-8 text-white rounded-md w-32"
+        onclick="Voucher()"
+      >
+        Chek voucher
+      </button>
+      <p id="hasilvoucher" class="mt-1"></p>
+    </div>
+
+    <div
+      class="bg-white w-[1300px] h-[60px] mx-auto  flex space-x-4 pt-3 pl-4"
+    >
+      <img src="gakir.jpg" class="w-[50px] h-[30px] ml-8" />
+      
+      
+      <button
+        class="bg-blue-500 h-8 text-white rounded-md w-32"
+        onclick="Voucher()"
+      >
+        Checkout
+      </button>
+      <p id="hasilvoucher" class="mt-1"></p>
+    </div>
+  
+  <script>
+    function minus() {
+      var num1 = parseFloat(document.getElementById("barang").value);
+      num1--;
+      document.getElementById("barang").value = num1;
+      console.log(num1);
+      var HargaBarang = document.getElementById("Var").innerText;
+      console.log(HargaBarang);
+      var HasilKurang = hargaBarang - num1;
+      console.log(HasilKurang);
+      document.getElementById("totalSementara").innerText = 
+       HasilKurang.toLocaleString("id-ID");
+    }
+
+    
+    function plus() {
+      var num2 = parseFloat(document.getElementById("barang").value);
+      num2++;
+      document.getElementById("barang").value = num2;
+      console.log(num2);
+      var hargaBarang = document.getElementById("Var").innerText;
+      console.log(hargaBarang);
+      var hasilKalkulasi = hargaBarang * num2;
+      console.log(hasilKalkulasi);
+      document.getElementById("totalSementara").innerText =
+        hasilKalkulasi.toLocaleString("id-ID");
+    }
+    
+    function Voucher() {
+      var inpuVoucher = document.getElementById("voucher").value;
+      if (inpuVoucher == "discount 50%") {
+        document.getElementById("hasilvoucher").innerHTML = "voucher Berhasil!";
+        document.getElementById("hasilvoucher").classList.add("text-green-500", "font-bold")
+      } else if (inpuVoucher == "Discount 30%") {
+        document.getElementById("hasilvoucher").innerHTML = "voucher Berhasil!";
+        document.getElementById("hasilvoucher").classList.add =("text-green-500", "font-bold") 
+      } else {
+        document.getElementById("hasilvoucher").innerHTML = "Coba Lagi";
+        document.getElementById("hasilvoucher").classList.remove("text-green-500", "font-bold")
+        document.getElementById("hasilvoucher").classList.add("text-red-500", "font-bold")
+      }
+    }
+
+    function checkout() {
+      var inpuCheckout = document.getElementById("")
+    }
+  </script>
+  </body>
+</html>
